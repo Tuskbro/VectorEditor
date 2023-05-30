@@ -1,0 +1,81 @@
+﻿<Window x:Class="VectorEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VectorEditor"
+        mc:Ignorable="d"
+        Title="Векторный графический редактор" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>    
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        
+            <Menu Grid.Row="0" Height="35">
+                <MenuItem Header="File">
+                    <MenuItem Header="Save" Click="svg_Click"></MenuItem>
+                <MenuItem Header="New" Name="NewCanvas"  Click="NewCanvas_Click"></MenuItem>
+                <MenuItem Header="Close" Name="Close" Click="Close_Click"></MenuItem>
+                    
+                
+                </MenuItem>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock VerticalAlignment="Center" >tools:</TextBlock>
+                <ComboBox Height="25" Width="60" SelectedIndex="0" Name="Tools" SelectionChanged="Tools_Selected">
+                    <ComboBoxItem IsSelected="False">
+                        <Image  Source="/Assets/Line.png" Width="25" Height="25">
+                        </Image>
+                    </ComboBoxItem>
+                    <ComboBoxItem IsSelected="False">
+                        <Image Source="/Assets/path.png" Width="25" Height="25">
+                        </Image>
+                    </ComboBoxItem>
+                    <ComboBoxItem IsSelected="False">
+                        <Image Source="/Assets/rectangle.png" Width="25" Height="25">
+                        </Image>
+                    </ComboBoxItem>
+                    <ComboBoxItem IsSelected="False">
+                        <Image Source="/Assets/ellipse.png" Width="25" Height="25">
+                        </Image>
+                    </ComboBoxItem>
+                    <ComboBoxItem IsSelected="False">
+                        <Image Source="/Assets/polygon.png" Width="25" Height="25">
+                        </Image>
+                    </ComboBoxItem>
+                    
+                    
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="2">
+                <TextBlock>Width: </TextBlock>
+                <TextBox Name="WidthTextBox" Width="40" PreviewTextInput="NumberValidationTextBox" Text="20" LostFocus="WidthTextBox_LostFocus" TextChanged="WidthTextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="2">
+                <TextBlock> Height: </TextBlock>
+                <TextBox Name="HeightTextBox" Width="40" PreviewTextInput="NumberValidationTextBox" Text="20" LostFocus="HeightTextBox_LostFocus" TextChanged="HeightTextBox_TextChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="2">
+                <TextBlock VerticalAlignment="Center"> Fill: </TextBlock>
+                <Button x:Name="Fill_ColorDialog" Width="25" Height="25" Background="White"  Click="Fill_ColorDialog_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="2">
+                <TextBlock VerticalAlignment="Center"> StrokeColor: </TextBlock>
+                <Button x:Name="Stroke_ColorDialog" Width="25" Height="25" Background="Black" Click="Stroke_ColorDialog_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="2">
+                <TextBlock VerticalAlignment="Center"> Stroke Thickeness: </TextBlock>
+                <TextBox Name="StrokeThickness" Width="40" PreviewTextInput="NumberValidationTextBox" Text="20" LostFocus="StrokeThickness_LostFocus" TextChanged="StrokeThickness_TextChanged"/>
+                <Slider Name="StrokeThickness_Slider" Width="100" ValueChanged="StrokeThickness_Slider_ValueChanged" Value="1" Maximum="9"/>
+            </StackPanel>
+
+        </Menu>
+
+        <Canvas  Grid.Row="1" Name="myCanvas" Background="LightYellow" Focusable="True" MouseLeftButtonDown="AddOrSelectItems"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBlock >Selected: </TextBlock>
+            <TextBlock Name="Disply_Selected"></TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

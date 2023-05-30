@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg width="784" height="346" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect x="85" y="98" width="156" height="128" fill="#FF8040"/>
+<ellipse cx="459" cy="172" rx="78" ry="64" fill="#008000"/>
+<line x1="291" y1="76" x2="466" y2="35" stroke="#000000" stroke-width="1"/>
+<line x1="466" y1="35" x2="594" y2="119" stroke="#000000" stroke-width="1"/>
+<line x1="594" y1="119" x2="669" y2="98" stroke="#000000" stroke-width="1"/>
+<polygon points="353,317 365,238 258,262 333,279 337,259 312,274 " fill="#000040" stroke="#000000" stroke-width="2" />
+</svg>

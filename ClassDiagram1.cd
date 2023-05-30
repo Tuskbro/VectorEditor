@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VectorEditor.BaseShape">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAEBACAAAAAAAgCAgAAAADAAEAIAIAAQAIECcAA=</HashCode>
+      <FileName>BaseShape.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="VectorEditor.MainWindow.Shape" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIkAAAEAQAAAIACABAAAIEBAAIAAAEJEAAgkAAQAIA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VectorEditor.VeEllipse">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>VeEllipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.VeLine">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAEAAAAAIAAAAABAAAAADABIAAAIAAAAAACAAA=</HashCode>
+      <FileName>VeLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.VePath">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAABAIAAAAAACAAA=</HashCode>
+      <FileName>VePath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.VePolygon">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAMAAgAAAAAAAACAAAABAIAAAIAAAAAA=</HashCode>
+      <FileName>VePolygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.VeRectangle">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>VeRectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorEditor.ColorPicker">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ColorPicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
